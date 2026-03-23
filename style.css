@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  line-height: 1.7;
+  background: #f7f8fb;
+  color: #333;
+}
+
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background: linear-gradient(135deg, #1f3c88, #4b6cb7);
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.hero-text .kana {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 12px;
+}
+
+.hero-text .title {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+
+.hero-text .catchcopy {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero-text .intro {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.hero-image {
+  flex: 0 0 240px;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.85);
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  padding: 40px 0 60px;
+}
+
+section {
+  background: #fff;
+  margin-bottom: 24px;
+  padding: 32px 24px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #1f3c88;
+  border-left: 6px solid #4b6cb7;
+  padding-left: 12px;
+}
+
+.skill-list,
+.portfolio-list {
+  display: grid;
+  gap: 16px;
+}
+
+.skill-item,
+.portfolio-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px;
+  background: #fafbff;
+}
+
+.skill-item h3,
+.portfolio-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.level {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #fff;
+  background: #4b6cb7;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.story-card {
+  background: #fafbff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.story-card h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #1f3c88;
+}
+
+.contact-list {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.contact-list li {
+  background: #fafbff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.note {
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 24px 20px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text .title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+}
