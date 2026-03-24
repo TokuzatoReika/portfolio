@@ -1,147 +1,110 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>徳里 麗華 | PHPエンジニア志望 ポートフォリオ</title>
-  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
+
+  <!-- ナビゲーション -->
+  <nav>
+    <ul>
+      <li><a href="#top">トップ</a></li>
+      <li><a href="#skills">スキル</a></li>
+      <li><a href="#portfolio">実績</a></li>
+      <li><a href="#story">経験</a></li>
+      <li><a href="#strength">強み</a></li>
+      <li><a href="#contact">連絡先</a></li>
+    </ul>
+  </nav>
+
+  <header id="top">
     <div class="container">
       <div class="hero">
         <div class="hero-text">
           <div class="title">プログラマー志望</div>
           <h1>徳里 麗華</h1>
-          <p class="kana">トクザト レイカ</p>
-          <p class="catchcopy">
-            PHPとMySQLを用いたWebアプリ開発が得意なエンジニア志望です。職業訓練校で教材として課題やアプリを作成しました。
-          </p>
-          <div class="intro">
-            <p>
-              職業訓練校でC・Java・PHP言語を教え、未経験者をIT人材へ育成してきた講師です。
-            </p>
-          </div>
+          <p>PHPとMySQLを用いたWebアプリ開発が得意なエンジニア志望です。</p>
+          <p>職業訓練校でC・Java・PHP言語を教え、未経験者をIT人材へ育成してきた講師です。</p>
         </div>
 
         <div class="hero-image">
-          <img src="images/myface.png" alt="徳里麗華のプロフィール画像">
+          <img src="myface.png" alt="プロフィール画像">
         </div>
       </div>
     </div>
   </header>
 
   <main class="container">
+
     <section id="skills">
-      <h2>スキル一覧</h2>
-      <div class="skill-list">
-        <div class="skill-item">
-          <h3>C言語</h3>
-          <div class="level">上級（指導経験あり）</div>
-          <p>ポインタ・構造体・ファイル処理を含むプログラムの作成および指導が可能です。</p>
-        </div>
+      <h2>スキル</h2>
 
-        <div class="skill-item">
-          <h3>PHP</h3>
-          <div class="level">中級（指導経験あり）</div>
-          <p>フォーム処理、DB連携（MySQL）を用いたWebアプリ開発および演習指導が可能です。</p>
-        </div>
+      <div class="skill-item">
+        <strong>C言語（上級）</strong><br>
+        ポインタ・構造体・ファイル処理を含むプログラム作成および指導が可能
+      </div>
 
-        <div class="skill-item">
-          <h3>Git</h3>
-          <div class="level">基礎</div>
-          <p>add / commit / push / pull を用いたバージョン管理が可能です。簡単なブランチ運用の学習経験があります。</p>
-        </div>
+      <div class="skill-item">
+        <strong>PHP（中級）</strong><br>
+        DB連携を用いたWebアプリ開発が可能
+      </div>
 
-        <div class="skill-item">
-          <h3>VSCode</h3>
-          <div class="level">日常利用</div>
-          <p>デバッグ、拡張機能を活用した開発環境構築が可能です。</p>
-        </div>
+      <div class="skill-item">
+        <strong>Git</strong><br>
+        基本操作および簡単なブランチ運用
+      </div>
+
+      <div class="skill-item">
+        <strong>VSCode</strong><br>
+        日常的に使用し開発環境構築が可能
       </div>
     </section>
 
     <section id="portfolio">
       <h2>制作実績</h2>
-      <div class="portfolio-list">
-        <div class="portfolio-item">
-          <h3>3択クイズ</h3>
-          <p><strong>概要：</strong>JavaScriptとMonacaを用いて作成したハイブリッドアプリです。</p>
-          <p><strong>使用技術：</strong>JavaScript / Monaca</p>
-          <p><strong>担当範囲：</strong>設計・実装</p>
-          <p><strong>工夫した点：</strong>学習用として扱いやすいUIを意識し、クイズ形式で楽しく取り組める構成にしました。</p>
-        </div>
 
-        <div class="portfolio-item">
-          <h3>ユーザー登録機能付き掲示板アプリ</h3>
-          <p><strong>概要：</strong>ユーザー登録機能を備えた掲示板アプリを作成しました。</p>
-          <p><strong>使用技術：</strong>PHP / JSON / テキスト・画像入出力</p>
-          <p><strong>担当範囲：</strong>設計・実装</p>
-          <p><strong>工夫した点：</strong>バリデーション処理を強化し、不正入力を防止できるようにしました。</p>
-        </div>
-
-        <div class="portfolio-item">
-          <h3>ユーザー登録機能付きショッピングサイト</h3>
-          <p><strong>概要：</strong>ユーザー登録、商品購入、カート管理を行えるショッピングサイトを作成しました。</p>
-          <p><strong>使用技術：</strong>PHP / MySQL</p>
-          <p><strong>担当範囲：</strong>設計・実装</p>
-          <p><strong>工夫した点：</strong>カート機能やセッション管理を取り入れ、基本的なECサイトの流れを実装しました。</p>
-        </div>
+      <div class="portfolio-item">
+        <strong>3択クイズ</strong><br>
+        JavaScript + Monaca
       </div>
-      <p class="note">※ GitHubリンクやデモURLを追加できる場合は、各作品ごとに追記すると評価されやすくなります。</p>
+
+      <div class="portfolio-item">
+        <strong>掲示板アプリ</strong><br>
+        PHP + JSON
+      </div>
+
+      <div class="portfolio-item">
+        <strong>ショッピングサイト</strong><br>
+        PHP + MySQL
+      </div>
     </section>
 
     <section id="story">
       <h2>学習・経験</h2>
-      <div class="story-grid">
-        <div class="story-card">
-          <h3>学習歴</h3>
-          <p>職業訓練校で10年間、技術学習と指導に携わってきました。</p>
-        </div>
-
-        <div class="story-card">
-          <h3>学習内容</h3>
-          <p>C言語、Java、PHP、JavaScript、MySQL（DB設計）、Linuxなどを学び、指導してきました。</p>
-        </div>
-
-        <div class="story-card">
-          <h3>チーム開発経験</h3>
-          <p>チーム開発経験はありませんが、教材作成や課題設計を通じて、学習者に伝わる実装や構成を意識してきました。</p>
-        </div>
-
-        <div class="story-card">
-          <h3>資格・成果</h3>
-          <p>基本情報技術者試験、Oracle Java Silver を取得。paizaラーニングランクは Cランク（C言語）です。</p>
-        </div>
-      </div>
+      <p>職業訓練校で10年間、C・Java・PHPなどを指導。</p>
     </section>
 
     <section id="strength">
-      <h2>強み・自己PR</h2>
-      <p>
-        課題解決力があります。受講生の理解度にばらつきがある中で、つまずきの原因を分析し、説明方法や課題内容を調整してきました。
-        この経験から、問題の本質を捉え、適切な対応を行う力を身につけています。
-      </p>
-    </section>
-
-    <section id="motivation">
-      <h2>志望動機</h2>
-      <p>
-        IT人材を育成する立場から、今後は開発側としてサービス価値の創出に貢献したいと考え志望しました。
-      </p>
+      <h2>強み</h2>
+      <p>課題解決力があります。受講生の理解度に応じて最適な指導を行ってきました。</p>
     </section>
 
     <section id="contact">
-      <h2>連絡先・外部リンク</h2>
-      <ul class="contact-list">
-        <li><strong>メールアドレス：</strong>〇〇</li>
-        <li><strong>GitHub：</strong> <a href="https://github.com/TokuzatoReika/git_practice" target="_blank" rel="noopener noreferrer">https://github.com/TokuzatoReika/git_practice</a></li>
-      </ul>
+      <h2>連絡先</h2>
+      <p>メール：〇〇</p>
+      <p><a href="https://github.com/TokuzatoReika/git_practice">GitHub</a></p>
     </section>
+
   </main>
 
   <footer>
-    <p>&copy; 2026 徳里 麗華 Portfolio</p>
+    <p>&copy; 2026 徳里 麗華</p>
   </footer>
+
 </body>
+
 </html>
